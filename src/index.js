@@ -4,6 +4,10 @@ import App from './App';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 
+const [,,light] = ['boots','tent','headlamp'];
+
+console.log(light);
+
 ReactDOM.render(
   <App authorized={true} />,
   document.getElementById('root')
