@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import restaurant from './restaurant.jpg';
 import './App.css';
 
 function Header(props){
@@ -13,7 +14,7 @@ function Main(props){
   return (
     <section>
       <p>We serve the most {props.adjective} food around.</p>
-
+      <img src={restaurant} style={{maxWidth:'100%'}} alt='menu board at a restaurant'/>
       <ul style={{textAlign:'left'}}>
         {props.dishes.map(dish => (
           <li key={dish.id}>{dish.title}</li>
